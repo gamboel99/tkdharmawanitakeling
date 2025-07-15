@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Baloo 2', cursive;
-  background-color: #001f4d; /* biru tua */
+  background-color: #001f4d;
   background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/islamic.png');
   background-size: contain;
   background-repeat: repeat;
@@ -61,6 +61,7 @@ main {
   border-radius: 20px;
   margin: auto;
   max-width: 700px;
+  animation: fadeIn 1s ease-in;
 }
 
 .hero-img {
@@ -69,6 +70,58 @@ main {
   height: auto;
   border-radius: 15px;
   box-shadow: 0 0 10px #fff;
+}
+
+/* Slideshow */
+.slideshow {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.slideshow h2 {
+  font-size: 1.8rem;
+  color: #fdd835;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  border: 3px solid #fff;
+}
+
+.slides {
+  width: 840px;
+  height: 280px;
+  display: flex;
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Animasi Slide */
+@keyframes slide {
+  0%   { margin-left: 0; }
+  33%  { margin-left: -280px; }
+  66%  { margin-left: -560px; }
+  100% { margin-left: 0; }
+}
+
+/* Efek masuk */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 footer {
