@@ -67,6 +67,8 @@ main {
   margin-top: 20px;
   width: 120px;
   height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #fff;
 }
 
 footer {
@@ -81,8 +83,14 @@ footer .social a {
   color: #fdd835;
   text-decoration: none;
   margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+footer .social a:visited {
+  color: #fdd835;
 }
 
 footer .social a:hover {
   text-decoration: underline;
+  color: #ffffff;
 }
