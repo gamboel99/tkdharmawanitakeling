@@ -2,34 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Baloo 2', cursive;
 }
 
 body {
-  background: #fff8e1;
-  position: relative;
+  font-family: 'Fredoka', 'Baloo 2', cursive;
   color: #4e342e;
-  padding-bottom: 50px;
+  background-color: #fff8e1;
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
 }
 
-.background-pattern {
+.pattern-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('assets/batik-islami.png');
-  background-size: cover;
+  background-image: url('assets/batik-pattern.png'); /* pola batik */
   background-repeat: repeat;
+  background-size: 150px;
   opacity: 0.05;
   z-index: -1;
 }
 
 header {
-  background: linear-gradient(135deg, #ffecb3, #fbc02d);
-  padding: 20px;
+  background: linear-gradient(to right, #ffe082, #ffcc80);
+  padding: 25px 20px;
   text-align: center;
-  border-bottom: 5px solid #f57f17;
+  border-bottom: 4px solid #f9a825;
 }
 
 .header-container {
@@ -45,18 +46,18 @@ header {
 }
 
 .title h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #3e2723;
 }
 
 .title p {
-  font-size: 1rem;
-  color: #5d4037;
+  font-size: 1.1rem;
+  color: #6d4c41;
 }
 
 nav {
-  background-color: #ffcc80;
-  border-bottom: 3px solid #ffa000;
+  background-color: #fdd835;
+  border-bottom: 3px solid #fbc02d;
 }
 
 nav ul {
@@ -67,17 +68,17 @@ nav ul {
 }
 
 nav li {
-  margin: 10px 15px;
+  margin: 8px 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: #4e342e;
+  color: #3e2723;
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -85,14 +86,14 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(to right, #fff3e0, #ffe0b2);
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   padding: 40px 20px;
   text-align: center;
-  color: #6d4c41;
+  color: #5d4037;
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
@@ -114,7 +115,7 @@ nav a:hover {
 
 .info h3 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .info-grid {
@@ -125,18 +126,24 @@ nav a:hover {
 }
 
 .card {
-  background-color: #fff8e1;
-  border: 2px solid #ffcc80;
+  background-color: #fffde7;
+  border: 2px solid #fbc02d;
   border-radius: 15px;
   padding: 20px;
   font-size: 1rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 footer {
-  background-color: #ffe082;
+  background-color: #fbc02d;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
-  color: #4e342e;
+  color: #3e2723;
+  margin-top: 40px;
 }
