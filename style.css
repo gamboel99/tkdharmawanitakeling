@@ -1,118 +1,83 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TK Dharmawanita III Desa Keling</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Scheherazade&family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="pattern-overlay"></div>
-  <header>
-    <div class="header-container">
-      <img src="assets/logo.png" alt="Logo TK" class="logo" />
-      <div class="title">
-        <h1>TK Dharmawanita III Desa Keling</h1>
-        <p>Membentuk Generasi Ceria, Cerdas, dan Berakhlak Mulia</p>
-      </div>
-    </div>
-  </header>
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade&family=Baloo+Bhaijaan+2&display=swap');
 
-  <nav>
-    <ul>
-      <li><a href="#beranda">🏠 Beranda</a></li>
-      <li><a href="#profil">🧕 Profil</a></li>
-      <li><a href="#prestasi">🏆 Prestasi</a></li>
-      <li><a href="#kegiatan">🎨 Kegiatan</a></li>
-      <li><a href="#berita">📰 Berita</a></li>
-      <li><a href="#pengumuman">📢 Pengumuman</a></li>
-      <li><a href="#link">🔗 Link</a></li>
-      <li><a href="#alumni">🎓 Alumni</a></li>
-      <li><a href="#galeri">📷 Galeri</a></li>
-    </ul>
-  </nav>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section id="beranda" class="container">
-      <h2>🧸 Selamat Datang di Website Resmi</h2>
-      <p>Website ini merupakan media informasi resmi TK Dharmawanita III Desa Keling.</p>
-    </section>
+body {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  background-color: #fffde7;
+  background-image: url('assets/pattern-islamic.png'); /* pastikan file ini ada */
+  background-size: 120px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #4e342e;
+}
 
-    <section id="profil" class="container">
-      <h2>🧕 Profil TK</h2>
-      <p>TK Dharmawanita III berdiri sejak tahun XXXX, dengan misi mendidik anak-anak menjadi pribadi yang cerdas, mandiri, dan berakhlak mulia. Kurikulum kami menggabungkan nilai-nilai keislaman dengan pendekatan pembelajaran aktif dan menyenangkan.</p>
-    </section>
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-    <section id="prestasi" class="container">
-      <h2>🏆 Prestasi</h2>
-      <ul>
-        <li>Juara 1 Lomba Mewarnai Kecamatan, 2024</li>
-        <li>Juara 2 Senam Ceria Se-Kabupaten, 2023</li>
-      </ul>
-    </section>
+h1, h2 {
+  font-family: 'Scheherazade', serif;
+  color: #5d4037;
+}
 
-    <section id="kegiatan" class="container">
-      <h2>🎨 Kegiatan TK</h2>
-      <p>Kami menyelenggarakan berbagai kegiatan seperti: pembelajaran kreatif, field trip edukatif, pembiasaan salat, pengenalan huruf hijaiyah, dan lomba-lomba yang membangun semangat serta kebersamaan.</p>
-    </section>
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #ffe082;
+  padding: 10px;
+  flex-wrap: wrap;
+}
 
-    <section id="berita" class="container">
-      <h2>📰 Berita Terbaru</h2>
-      <p>15 Juli 2025 - TK Dharmawanita III mengadakan lomba Hari Anak Nasional dengan berbagai permainan edukatif dan bazar anak.</p>
-    </section>
+nav ul li {
+  margin: 5px 10px;
+}
 
-    <section id="pengumuman" class="container">
-      <h2>📢 Pengumuman</h2>
-      <p>Pendaftaran peserta didik baru untuk tahun ajaran 2025/2026 telah dibuka! Silakan hubungi kami untuk informasi lebih lanjut.</p>
-    </section>
+nav a {
+  text-decoration: none;
+  color: #3e2723;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: #ffecb3;
+}
 
-    <section id="link" class="container">
-      <h2>🔗 Link Terkait</h2>
-      <ul>
-        <li><a href="https://diknas.go.id" target="_blank">Dinas Pendidikan Nasional</a></li>
-        <li><a href="https://pusdatin.kemdikbud.go.id" target="_blank">Pusdatin Kemendikbud</a></li>
-      </ul>
-    </section>
+nav a:hover {
+  background-color: #ffd54f;
+}
 
-    <section id="alumni" class="container">
-      <h2>🎓 Data Alumni</h2>
-      <p>Alumni TK Dharmawanita III telah melanjutkan ke sekolah dasar favorit dan menjadi siswa berprestasi. Kami bangga atas capaian mereka.</p>
-    </section>
+footer {
+  background: #fdd835;
+  color: #3e2723;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
 
-    <section id="galeri" class="container">
-      <h2>📷 Galeri Foto</h2>
-      <p>Berikut adalah dokumentasi kegiatan dan acara TK kami yang penuh warna dan keceriaan.</p>
-    </section>
-  </main>
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
 
-  <footer>
-    <div class="footer-container">
-      <div class="contact">
-        <h4>📍 Kontak Kami</h4>
-        <p>Alamat: Jl. Raya Keling No.123, Desa Keling, Kediri</p>
-        <p>Telepon: 0857-1234-5678</p>
-        <p>Email: info@tkdharmawanita.sch.id</p>
-        <p>Website: www.tkdharmawanita.sch.id</p>
-      </div>
-      <div class="sosmed">
-        <h4>🌐 Ikuti Kami</h4>
-        <p>
-          <a href="#">Facebook</a> |
-          <a href="#">Instagram</a> |
-          <a href="#">YouTube</a>
-        </p>
-      </div>
-      <div class="footer-links">
-        <h4>🔍 Pintasan</h4>
-        <ul>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#profil">Profil</a></li>
-          <li><a href="#kegiatan">Kegiatan</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="footer-bottom">&copy; 2025 TK Dharmawanita III Desa Keling. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.footer-container h4 {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
