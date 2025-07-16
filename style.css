@@ -21,39 +21,6 @@ h1 {
   color: #fdd835;
 }
 
-.content-container {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 800px;
-  margin: 30px auto;
-  animation: fadeIn 1s ease-in;
-}
-
-.content-container h2 {
-  color: #fdd835;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.content-container p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-.prestasi-list {
-  text-align: left;
-  margin: 20px auto;
-  padding-left: 20px;
-  max-width: 600px;
-}
-
-.prestasi-list li {
-  margin-bottom: 10px;
-  font-size: 1.05rem;
-}
-
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -86,6 +53,60 @@ nav ul li a.active {
 main {
   padding: 30px 20px;
   text-align: center;
+}
+
+.content-container,
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  animation: fadeIn 1s ease-in;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-container h2,
+.container h2 {
+  color: #fdd835;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.content-container p,
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.prestasi-list,
+.profil-list,
+.kegiatan-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.prestasi-list li,
+.profil-list li,
+.kegiatan-list li {
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.kegiatan-list li:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .hero {
@@ -181,48 +202,31 @@ footer .social a:hover {
   color: #ffffff;
 }
 
-.section {
-  padding: 40px 20px;
-}
+/* Responsive Menu */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.container {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  color: #fff;
-}
+  nav ul li {
+    margin: 8px 0;
+  }
 
-.profil-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
-}
+  nav ul li a {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
 
-.profil-list li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
+  h1 {
+    font-size: 1.8rem;
+  }
 
-.kegiatan-list {
-  margin-top: 20px;
-  list-style: none;
-  padding-left: 0;
-}
-
-.kegiatan-list li {
-  margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-size: 1.05rem;
-  transition: transform 0.2s ease;
-}
-
-.kegiatan-list li:hover {
-  transform: translateY(-3px);
-  background-color: rgba(255, 255, 255, 0.15);
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
