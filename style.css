@@ -230,3 +230,29 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.profil-kolom p {
+  text-align: left;
+  font-size: 16px;
+  margin: 15px 0;
+  background: rgba(255,255,255,0.8);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #fdd835;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.prestasi-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 5px solid #fdd835;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.prestasi-item h3 {
+  margin-top: 0;
+  color: #006600;
+  font-size: 1.2rem;
+}
