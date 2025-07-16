@@ -1,174 +1,181 @@
-/* ==== Umum ==== */
+/* ========== GLOBAL STYLES ========== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f9fff8;
-  background-image: url('https://www.transparenttextures.com/patterns/islamic.png');
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/islamic-pattern.png');
+  background-repeat: repeat;
+  background-size: auto;
   color: #333;
 }
 
-/* ==== Header ==== */
+/* ========== HEADER ========== */
 header {
-  background-color: #33691e;
+  background-color: #2e7d32;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
-  padding: 15px 20px;
+}
+
+.header-left {
   display: flex;
   align-items: center;
 }
 
-header img.logo {
+.logo {
   height: 60px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .title-group h1 {
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .title-group p {
-  margin: 4px 0 0;
-  font-size: 14px;
-  color: #dcedc8;
+  margin: 0;
+  font-size: 13px;
 }
 
-/* ==== Navigasi ==== */
 nav {
-  background-color: #558b2f;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  padding: 10px 16px;
-  background-color: #689f38;
-  border-radius: 6px;
-  margin: 0 6px;
-  display: inline-block;
-  font-weight: bold;
+  background-color: #388e3c;
+  margin: 5px 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
   font-size: 14px;
+  transition: background 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: #cddc39;
-  color: #33691e;
+nav a:hover {
+  background-color: #66bb6a;
+  color: #004d40;
 }
 
-/* ==== Hero Section ==== */
+/* ========== HERO SECTION ========== */
 .hero {
-  background-color: #f0f9ec;
-  padding: 40px 20px;
   text-align: center;
-  border-radius: 12px;
+  background-color: #e8f5e9;
+  padding: 40px 20px;
+  border-radius: 15px;
   margin: 20px;
-  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .hero h2 {
-  color: #558b2f;
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  color: #2e7d32;
 }
 
-.hero p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-}
-
-/* ==== Container Konten ==== */
-.container {
-  max-width: 1080px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-/* ==== Kolom Profil Singkat ==== */
-.profile-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+.hero .btn-ppdb {
+  display: inline-block;
   margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.profile-info .item {
-  background-color: #f1f8e9;
-  flex: 1 1 200px;
-  padding: 15px;
-  border-left: 5px solid #8bc34a;
-  border-radius: 8px;
+.hero .btn-ppdb:hover {
+  background-color: #388e3c;
 }
 
-.profile-info .item h4 {
-  margin: 0;
-  font-size: 16px;
-  color: #33691e;
+/* ========== INFO GRID ========== */
+.info {
+  max-width: 1080px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
 }
 
-.profile-info .item p {
-  margin: 5px 0 0;
-  font-size: 14px;
+.info-card {
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 6px solid #2e7d32;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* ==== Galeri ==== */
-.gallery {
-  margin-top: 30px;
+.info-card h3 {
+  margin-top: 0;
+  color: #2e7d32;
+  font-size: 18px;
 }
 
-.gallery h3 {
-  color: #558b2f;
-  margin-bottom: 10px;
+/* ========== GALERI ========== */
+.galeri {
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #ffffffdd;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.gallery-grid {
+.galeri h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.galeri-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 15px;
-  margin-top: 15px;
 }
 
-.gallery-grid img {
+.galeri-grid img {
   width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  aspect-ratio: 4/3;
-  border: 4px solid #cddc39;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #c8e6c9;
+  padding: 4px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-.gallery-grid img:hover {
+.galeri-grid img:hover {
   transform: scale(1.05);
 }
 
-/* ==== Footer ==== */
+/* ========== FOOTER ========== */
 footer {
-  background-color: #33691e;
+  background-color: #2e7d32;
   color: white;
-  padding: 40px 20px;
+  padding: 30px 20px;
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .footer-section h4 {
-  margin: 0 0 10px;
-  color: #cddc39;
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-section ul {
@@ -178,11 +185,11 @@ footer {
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  margin-bottom: 8px;
 }
 
 .footer-section ul li a {
-  color: #dcedc8;
+  color: #c8e6c9;
   text-decoration: none;
 }
 
@@ -193,28 +200,33 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #558b2f;
+  border-top: 1px solid #4caf50;
   padding-top: 10px;
   font-size: 13px;
 }
 
-/* ==== Responsif ==== */
-@media (max-width: 600px) {
+/* ========== RESPONSIVE NAV ========== */
+@media (max-width: 768px) {
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .profile-info {
     flex-direction: column;
-  }
-
-  .hero {
-    padding: 20px;
+    align-items: center;
   }
 
   nav a {
-    margin: 5px 4px;
+    width: 90%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .info {
+    padding: 0 10px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
