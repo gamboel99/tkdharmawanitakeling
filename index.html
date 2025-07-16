@@ -8,9 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>TK Dharmawanita III Desa Keling</h1>
-    <nav>
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo TK" class="logo">
+      <h1>TK Dharmawanita III Desa Keling</h1>
+    </div>
+    <nav class="navbar">
       <ul>
         <li><a href="index.html" class="active">🏠 Beranda</a></li>
         <li><a href="profil.html">📘 Profil</a></li>
@@ -26,38 +29,61 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Selamat Datang!</h2>
-      <p>Website resmi TK Dharmawanita III Desa Keling sebagai media komunikasi, informasi, dan promosi untuk wali murid dan masyarakat sekitar.</p>
-      <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" alt="Anak TK" class="hero-img" />
+    <section class="hero-section">
+      <div class="hero-text">
+        <h2>Selamat Datang di Website Resmi</h2>
+        <h3>TK Dharmawanita III Desa Keling</h3>
+        <p>Media informasi, komunikasi, dan promosi pendidikan anak usia dini berbasis karakter Islami.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/anak-tk.png" alt="Ilustrasi Anak TK">
+      </div>
     </section>
 
     <section class="slideshow">
       <h2>Aktivitas Anak-Anak Kami</h2>
       <div class="slider">
         <div class="slides">
-          <img src="assets/slide1.jpg" alt="Anak belajar" />
-          <img src="assets/slide2.jpg" alt="Anak bermain" />
-          <img src="assets/slide3.jpg" alt="Anak mengaji" />
+          <img src="assets/slide1.jpg" alt="Kegiatan Belajar">
+          <img src="assets/slide2.jpg" alt="Kegiatan Bermain">
+          <img src="assets/slide3.jpg" alt="Kegiatan Mengaji">
         </div>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <div class="info-box">
+        <h3>👩‍🏫 Guru</h3>
+        <p>4 Orang</p>
+      </div>
+      <div class="info-box">
+        <h3>👧 Murid</h3>
+        <p>± 60 Anak</p>
+      </div>
+      <div class="info-box">
+        <h3>📅 Tahun Berdiri</h3>
+        <p>2005</p>
+      </div>
+      <div class="info-box">
+        <h3>👩 Kepala Sekolah</h3>
+        <p>Ibu Siti Aminah, S.Pd.AUD</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 TK Dharmawanita III Desa Keling</p>
-    <p>Alamat: Desa Keling, Kecamatan Kepung, Kabupaten Kediri</p>
-    <p>Telepon: 0812-3456-7890 | Email: tkdharmawanita3keling@gmail.com</p>
-    <p>Website: www.tkdharmawanita3keling.sch.id</p>
-    <div class="social">
-      <a href="#">🌐 Website</a> |
-      <a href="#">📘 Facebook</a> |
-      <a href="#">📸 Instagram</a> |
-      <a href="#">📱 WhatsApp</a>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>Alamat:</strong> Desa Keling, Kepung, Kediri</p>
+        <p><strong>Email:</strong> tkdharmawanita3keling@gmail.com</p>
+        <p><strong>Telp:</strong> 0812-3456-7890</p>
+      </div>
+      <div class="footer-right">
+        <p><strong>Media Sosial</strong></p>
+        <p>🌐 Website | 📘 Facebook | 📸 Instagram | 📱 WhatsApp</p>
+        <p style="margin-top: 10px;">Developed by <strong>CV Mitra Utama Consultindo</strong></p>
+      </div>
     </div>
-    <p style="margin-top: 10px;">Developed by <strong>CV Mitra Utama Consultindo</strong></p>
   </footer>
-
-  <script src="slider.js"></script>
 </body>
 </html>
