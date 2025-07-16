@@ -1,40 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TK Dharmawanita III Desa Keling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | TK Dharmawanita III Desa Keling</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header><div class="title-group"><h1>TK Dharmawanita III Desa Keling</h1><p>Mendidik Anak Usia Dini yang Berkarakter, Kreatif, dan Islami</p></div></header>
-<nav>
-  <a href="index.html">Beranda</a>
-  <a href="profil.html">Profil</a>
-  <a href="prestasi.html">Prestasi</a>
-  <a href="kegiatan.html">Kegiatan</a>
-  <a href="berita.html">Berita</a>
-  <a href="pengumuman.html">Pengumuman</a>
-  <a href="galeri.html">Galeri</a>
-  <a href="alumni.html">Alumni</a>
-  <a href="link.html">Link</a>
-  <a href="kontak.html">Kontak</a>
-</nav>
-<main><section class="content"><h2>Halaman: Kontak</h2></section></main>
+  <header>
+    <div class="header-left">
+      <div class="title-group">
+        <h1>TK Dharmawanita III Desa Keling</h1>
+        <p>Mendidik Anak Usia Dini yang Berkarakter, Kreatif, dan Islami</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="prestasi.html">Prestasi</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="berita.html">Berita</a>
+      <a href="pengumuman.html">Pengumuman</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="link.html">Link</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hubungi Kami</h2>
+      <p>Silakan hubungi kami melalui informasi berikut atau isi formulir kontak di bawah untuk pertanyaan atau keperluan lain.</p>
+    </section>
+
+    <div class="info">
+      <div class="info-card">
+        <h3>Alamat Sekolah</h3>
+        <p>TK Dharmawanita III Desa Keling<br>Desa Keling, Kecamatan Kepung<br>Kabupaten Kediri, Jawa Timur</p>
+      </div>
+      <div class="info-card">
+        <h3>Kontak</h3>
+        <p>Telepon/WA: <a href="https://wa.me/6281234567890" target="_blank">0812-3456-7890</a><br>
+        Email: <a href="mailto:tkdharmawanita3keling@gmail.com">tkdharmawanita3keling@gmail.com</a><br>
+        Website: <a href="https://yayasantkdharmawanitakeling.vercel.app" target="_blank">tkdharmawanita3keling.sch.id</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Media Sosial</h3>
+        <p>
+          <a href="#">📸 Instagram</a><br>
+          <a href="#">📘 Facebook</a><br>
+          <a href="#">📱 WhatsApp</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <h3>Formulir Kontak</h3>
+      <form action="#" method="post" class="form-kontak">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea><br><br>
+
+        <button type="submit" class="btn-ppdb">Kirim Pesan</button>
+      </form>
+    </div>
+  </main>
+
   <footer>
     <div class="footer-grid">
       <div class="footer-section">
-        <h4>Alamat</h4>
-        <p>TK Dharmawanita III Desa Keling<br>
-        Desa Keling, Kecamatan Kepung,<br>
-        Kabupaten Kediri, Jawa Timur</p>
+        <h4>Kontak & Alamat</h4>
+        <p>
+          TK Dharmawanita III Desa Keling<br>
+          Desa Keling, Kecamatan Kepung,<br>
+          Kabupaten Kediri, Jawa Timur<br>
+          Telp/WA: 0812-3456-7890<br>
+          Email: tkdharmawanita3keling@gmail.com<br>
+          Website: tkdharmawanita3keling.sch.id
+        </p>
       </div>
       <div class="footer-section">
-        <h4>Kontak</h4>
-        <p>Telepon: 0812-3456-7890<br>
-        Email: tkdharmawanita3keling@gmail.com<br>
-        Website: www.tkdharmawanita3keling.sch.id</p>
+        <h4>Menu Cepat</h4>
+        <ul>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="pengumuman.html">Pengumuman</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
       </div>
       <div class="footer-section">
         <h4>Ikuti Kami</h4>
@@ -49,4 +107,5 @@
       © 2025 TK Dharmawanita III Desa Keling - Developed by CV. Mitra Utama Consultindo
     </div>
   </footer>
-</body></html>
+</body>
+</html>
