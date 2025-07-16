@@ -20,6 +20,21 @@ header {
   color: white;
 }
 
+.kegiatan-item {
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 5px solid #ffcc00;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.kegiatan-item h3 {
+  margin-top: 0;
+  color: #009688;
+  font-size: 1.2rem;
+}
+
 .header-left {
   display: flex;
   align-items: center;
