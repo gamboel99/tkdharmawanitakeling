@@ -1,7 +1,10 @@
 /* ========== GLOBAL STYLES ========== */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Lucida Calligraphy', 'Dancing Script', cursive, sans-serif;
+}
+
   background-color: #fdfcf5;
   background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
   background-repeat: repeat;
