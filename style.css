@@ -1,53 +1,61 @@
+/* === WARNA TEMA LEBAH MADU ===
+Hitam: #1A1A1A
+Coklat tua: #5C3A21
+Krem: #F6E7C1
+Kuning madu: #F9C80E
+*/
+
 body {
   margin: 0;
   font-family: 'Baloo 2', cursive;
-  background-color: #001f4d;
-  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/islamic.png');
-  background-size: contain;
+  background-color: #1A1A1A;
+  background-image: url('https://www.transparenttextures.com/patterns/hexellence.png');
   background-repeat: repeat;
-  color: white;
+  background-size: contain;
+  color: #F6E7C1;
 }
 
 header {
-  background-color: #003366;
-  padding: 20px;
+  background-color: #5C3A21;
+  padding: 20px 10px;
   text-align: center;
-  border-bottom: 5px solid gold;
+  border-bottom: 4px solid #F9C80E;
 }
 
 h1 {
   margin: 0;
   font-size: 2.4rem;
-  color: #fdd835;
+  color: #F9C80E;
 }
 
+/* === NAVIGATION === */
 nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
   list-style-type: none;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
 }
 
 nav ul li {
-  margin: 10px;
+  margin: 6px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  background-color: #0288d1;
-  padding: 10px 20px;
+  color: #F6E7C1;
+  background-color: #333;
+  padding: 10px 18px;
   border-radius: 25px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #26c6da;
-  color: #003366;
+  background-color: #F9C80E;
+  color: #1A1A1A;
 }
 
 main {
@@ -56,20 +64,21 @@ main {
 }
 
 .content-container,
-.container {
-  background-color: rgba(255, 255, 255, 0.1);
+.container,
+.hero,
+.form-section {
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 30px;
   border-radius: 20px;
-  max-width: 900px;
+  max-width: 960px;
   margin: 30px auto;
   animation: fadeIn 1s ease-in;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: #F6E7C1;
 }
 
-.content-container h2,
-.container h2 {
-  color: #fdd835;
+h2 {
+  color: #F9C80E;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -80,28 +89,24 @@ main {
   line-height: 1.7;
 }
 
-.prestasi-list,
-.profil-list,
-.kegiatan-list {
+ul.prestasi-list,
+ul.profil-list,
+ul.kegiatan-list {
   list-style: none;
   padding-left: 0;
   margin-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
-.prestasi-list li,
-.profil-list li,
-.kegiatan-list li {
+li {
   margin-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.08);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
   font-size: 1.05rem;
-  transition: transform 0.2s ease;
 }
 
 .kegiatan-list li:hover {
@@ -109,34 +114,10 @@ main {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.hero {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 20px;
-  margin: auto;
-  max-width: 700px;
-  animation: fadeIn 1s ease-in;
-}
-
-.hero-img {
-  margin-top: 20px;
-  width: 120px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 10px #fff;
-}
-
-/* Slideshow */
+/* === SLIDESHOW === */
 .slideshow {
   margin-top: 40px;
-  text-align: center;
   animation: fadeIn 1s ease-in;
-}
-
-.slideshow h2 {
-  font-size: 1.8rem;
-  color: #fdd835;
-  margin-bottom: 20px;
 }
 
 .slider {
@@ -145,8 +126,8 @@ main {
   overflow: hidden;
   margin: 0 auto;
   border-radius: 30px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-  border: 3px solid #fff;
+  border: 3px solid #F9C80E;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .slides {
@@ -160,41 +141,34 @@ main {
   width: 280px;
   height: 280px;
   object-fit: contain;
-  background-color: white;
   padding: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-/* Animasi Slide */
-@keyframes slide {
-  0%   { margin-left: 0; }
-  33%  { margin-left: -280px; }
-  66%  { margin-left: -560px; }
-  100% { margin-left: 0; }
+/* === HERO === */
+.hero-img {
+  margin-top: 20px;
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #fff;
 }
 
-/* Efek masuk */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
+/* === FOOTER === */
 footer {
-  background-color: #003366;
+  background-color: #5C3A21;
   padding: 25px 10px;
   text-align: center;
-  border-top: 4px solid gold;
+  border-top: 4px solid #F9C80E;
   font-size: 0.95rem;
 }
 
 footer .social a {
-  color: #fdd835;
+  color: #F9C80E;
   text-decoration: none;
   margin: 0 5px;
   transition: color 0.3s ease;
-}
-
-footer .social a:visited {
-  color: #fdd835;
 }
 
 footer .social a:hover {
@@ -202,7 +176,7 @@ footer .social a:hover {
   color: #ffffff;
 }
 
-/* Responsive Menu */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -214,32 +188,30 @@ footer .social a:hover {
   }
 
   nav ul li a {
-    display: inline-block;
     width: 80%;
     text-align: center;
     font-size: 1rem;
-    padding: 10px 0;
   }
 
   h1 {
     font-size: 1.8rem;
   }
-
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
-.link-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 30px;
+/* === ANIMASI === */
+@keyframes slide {
+  0%   { margin-left: 0; }
+  33%  { margin-left: -280px; }
+  66%  { margin-left: -560px; }
+  100% { margin-left: 0; }
 }
 
-.link-list li {
-  margin-bottom: 15px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
+
+/* === HALAMAN KHUSUS === */
 
 .link-list li a {
   display: block;
@@ -247,7 +219,7 @@ footer .social a:hover {
   padding: 15px;
   border-radius: 10px;
   font-size: 1.1rem;
-  color: #fdd835;
+  color: #F9C80E;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -256,13 +228,6 @@ footer .social a:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transform: scale(1.02);
   color: white;
-}
-
-.alumni-list {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .alumni-card {
@@ -278,15 +243,7 @@ footer .social a:hover {
 }
 
 .alumni-card h3 {
-  color: #fdd835;
-  margin-bottom: 10px;
-}
-
-.form-section form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  color: #F9C80E;
 }
 
 .form-section input {
@@ -297,7 +254,7 @@ footer .social a:hover {
 }
 
 .form-section button {
-  background-color: #fdd835;
+  background-color: #F9C80E;
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -321,7 +278,7 @@ footer .social a:hover {
 .galeri-grid img {
   width: 100%;
   border-radius: 12px;
-  border: 3px solid #fdd835;
+  border: 3px solid #F9C80E;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
   background-color: white;
