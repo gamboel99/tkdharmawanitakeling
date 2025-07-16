@@ -180,3 +180,24 @@ footer .social a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
+
+.kegiatan-list {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.kegiatan-list li {
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.kegiatan-list li:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
